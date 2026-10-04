@@ -1,5 +1,13 @@
 # Baladio Installer
 
+<div align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-32.x-47848F?logo=electron&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+</div>
+
 This is the official Windows GUI installer for [Baladio](https://github.com/rxdwan/Baladio), built with Electron.
 
 It provides a seamless, one-click installation experience that handles all dependencies automatically in the background.
