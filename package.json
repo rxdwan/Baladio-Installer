@@ -11,13 +11,8 @@
     "appId": "com.baladio.installer",
     "productName": "Baladio Installer",
     "win": {
-      "target": "nsis"
-    },
-    "nsis": {
-      "oneClick": true,
-      "perMachine": false,
-      "allowToChangeInstallationDirectory": false,
-      "deleteAppDataOnUninstall": false
+      "target": "portable",
+      "icon": "assets/icon.png"
     }
   },
   "devDependencies": {
