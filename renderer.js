@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             'checking': 'Checking dependencies...',
             'installing-git': 'Installing Git...',
             'installing-node': 'Installing Node.js...',
+            'installing-ytdlp': 'Installing yt-dlp...',
             'cloning': 'Cloning Baladio repository...',
             'npm-install': 'Installing npm dependencies...',
             'startup': 'Configuring auto-start...',
