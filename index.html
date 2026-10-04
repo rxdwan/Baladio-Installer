@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baladio Installer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="window-content">
+        <div class="hero">
+            <img src="assets/icon.png" alt="Baladio Logo" class="logo">
+            <h1>Install Baladio</h1>
+            <p>Your personal local-first music player.</p>
+        </div>
+
+        <div id="step-welcome" class="step active">
+            <div class="info-card">
+                <h3>Installation Details</h3>
+                <ul class="check-list">
+                    <li><strong>Location:</strong> <span id="install-path-display">C:\...\Music\Baladio</span></li>
+                    <li><strong>Components:</strong> Baladio, Git (if missing), Node.js (if missing), npm dependencies</li>
+                    <li><strong>Extras:</strong> Configures Windows auto-start on login</li>
+                </ul>
+            </div>
+            
+            <div class="repo-link">
+                Repository Link: <a href="#" id="link-repo">github.com/rxdwan/Baladio</a>
+                <button id="btn-open-repo" class="btn-secondary">Open in Chrome</button>
+            </div>
+
+            <div class="actions">
+                <button id="btn-start" class="btn-primary">Install Now</button>
+            </div>
+        </div>
+
+        <div id="step-progress" class="step hidden">
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span id="progress-status">Preparing...</span>
+                    <span id="progress-percent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div id="progress-details" class="progress-details"></div>
+            </div>
+        </div>
+
+        <div id="step-done" class="step hidden">
+            <div class="success-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h2>Installation Complete!</h2>
+            <p>Baladio has been installed and will start automatically when you log into Windows.</p>
+            <p>You can also start it manually by running <code>node server.js</code> in the installation folder.</p>
+            <div class="actions">
+                <button id="btn-finish" class="btn-primary">Finish</button>
+            </div>
+        </div>
+
+        <div id="step-error" class="step hidden">
+            <div class="error-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+            </div>
+            <h2>Installation Failed</h2>
+            <p id="error-message" class="error-msg"></p>
+            <div class="actions">
+                <button id="btn-retry" class="btn-primary">Try Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

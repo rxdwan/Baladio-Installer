@@ -1,0 +1,234 @@
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent: #a855f7;
+    --accent-hover: #d946ef;
+    --border: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-primary);
+    overflow: hidden;
+    user-select: none;
+}
+
+.window-content {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(192, 132, 252, 0.3);
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #e879f9, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: var(--text-secondary);
+}
+
+.step {
+    display: none;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step.active {
+    display: flex;
+}
+
+.info-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
+.check-list {
+    list-style: none;
+}
+
+.check-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.check-list strong {
+    color: var(--text-primary);
+}
+
+.repo-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--card-bg);
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.repo-link a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.repo-link a:hover {
+    text-decoration: underline;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Progress */
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #c084fc, #e879f9);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.progress-details {
+    font-size: 12px;
+    color: var(--text-secondary);
+    white-space: pre-wrap;
+    overflow-y: auto;
+    font-family: monospace;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.progress-details::-webkit-scrollbar {
+    width: 6px;
+}
+
+.progress-details::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+/* Done / Error */
+.success-icon, .error-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#step-done h2, #step-error h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#step-done p, #step-error p {
+    text-align: center;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.error-msg {
+    color: #f87171 !important;
+    background: rgba(248, 113, 113, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    word-break: break-all;
+}
