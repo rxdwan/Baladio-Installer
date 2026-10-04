@@ -24,7 +24,7 @@ It provides a seamless, one-click installation experience that handles all depen
 
 You can build a standalone Windows executable (`.exe`) using `electron-builder`.
 
-> Or just download the latest installer from [Releases](/releases)
+> Or just download the latest installer from [Releases](/.releases)
 
 ### Prerequisites
 
