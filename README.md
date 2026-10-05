@@ -1,4 +1,4 @@
-# Baladio Installer
+# Baladio Installer (for non-technical users)
 
 <div align="center">
 
@@ -9,8 +9,9 @@
 </div>
 
 This is the official Windows GUI installer for [Baladio](https://github.com/rxdwan/Baladio), built with Electron.
-
 It provides a seamless, one-click installation experience that handles all dependencies automatically in the background.
+
+Visit Baladio's [product page](https://rxdwan.github.io/baladio-product-page) to learn more.
 
 ## Features
 

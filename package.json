@@ -1,5 +1,6 @@
 {
   "name": "baladio-installer",
+  "author": "Ridwan <rizzwan.edu@gmail.com>",
   "version": "1.0.0",
   "description": "Installer for Baladio",
   "main": "main.js",
