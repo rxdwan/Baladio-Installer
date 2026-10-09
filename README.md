@@ -25,7 +25,7 @@ Visit Baladio's [product page](https://rxdwan.github.io/baladio-product-page) to
 
 You can build a standalone Windows executable (`.exe`) using `electron-builder`.
 
-> Or just download the latest installer from [Releases](/.releases)
+> Or just download the latest installer from [Releases](/.releases) page. 
 
 ### Prerequisites
 
